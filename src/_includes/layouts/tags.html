@@ -1,0 +1,18 @@
+{% extends "layouts/datasets.html" %}
+
+{% set datasetCategory = filter %}
+{% set datakey = dataset %}
+{% set pageTitle = title + ' - ' + site.name %}
+
+      {% block content %}
+      <div class="wrapper-content flow-100">
+        <h1>{{ title }}</h1>
+        <div class="flow-300">
+          {%- for datakey in all | sortByTitle -%}
+          {% if datasetCategory in datakey.tags %}
+          {% include "partials/dataset.html" %}
+          {% endif %}
+          {%- endfor -%}
+        </div>
+      </div>
+      {% endblock %}

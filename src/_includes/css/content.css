@@ -1,0 +1,33 @@
+.content-page {
+  font-size: 1.2rem;
+}
+
+.content-page ul li {
+  line-height: 1.4;
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+}
+
+.content-page h2 {
+  font-size: 1.2rem;
+}
+
+.content-page h2 + p,
+.content-page h2 + ul {
+  margin-top: .5rem;
+}
+
+.content-page a {
+  text-decoration-thickness: .1rem;
+}
+
+blockquote {
+  margin-inline-start: 1rem;
+  border-inline-start: .35rem solid var(--blockquote);
+  font-family: var(--font-family-subheading), Georgia, serif;
+  font-size: 1.1rem;
+  padding-inline-start: 1rem;
+  line-height: 1.7;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,521 @@
+@font-face {
+    font-family: 'Righteous';
+    src: url('/fonts/Righteous-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('/fonts/SourceSansPro-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro SemiBold';
+    src: url('/fonts/SourceSansPro-SemiBold.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merriweather Bold';
+    src: url('/fonts/Merriweather-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Merriweather Regular';
+    src: url('/fonts/Merriweather-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+  --font-family-base: 'Source Sans Pro', verdana, sans-serif;
+  --font-family-base-bold: 'Source Sans Pro SemiBold', verdana, sans-serif;
+  --font-family-subheading: 'Merriweather Regular', Georgia, sans-serif;
+  --font-family-heading: 'Merriweather Bold', Georgia, sans-serif;
+  --color-space-cadet: #0c0c1c;
+  --color-prussian-blue: #152941;
+  --color-flat-chicklet: #593c8f;
+  --color-dark-red: #ca2b3b;
+  --color-darker-red: #a0222f;
+  --color-pale-cerulean: #b5d3e3;
+  --color-pale-cerulean-light: #d3e4ee;
+  --color-electric-blue: #e0fbfc;
+  --color-bright-cyan: #2bcaba;
+  --color-deep-cyan: #192b34;
+  --color-burnt-sienna: #f97556;
+  --color-raisin-black: #2e2e3a;
+  --color-flat-navy: #1e2749;
+  --color-alice-blue: #eff7ff;
+  --color-steel-blue: #355f63;
+  --color-white: #fff;
+  --color-black: #000;
+
+/* Light mode --------------------------------- */
+  --site-bg: var(--color-pale-cerulean-light);
+  --site-bg-sm: var(--color-pale-cerulean);
+  --site-title: var(--color-flat-navy);
+  --bg-img: url("/img/area-chart-light.svg");
+  --base-text: inherit;
+  --link: var(--color-flat-navy);
+  --link-hover-text: var(--color-dark-red);
+  --text-decoration: var(--color-dark-red);
+  --focus: var(--color-dark-red);
+  --page-title: var(--color-flat-navy);
+  --nav-active: var(--color-dark-red);
+  --nav-hover-text: var(--color-dark-red);
+  --nav-focus: var(--color-dark-red);
+  --nav-link: var(--color-flat-navy);
+  --nav-link-decoration: var(--color-flat-navy);
+  --menu: var(--color-flat-navy);
+  --dataset-bg: var(--color-white);
+  --dataset-title: var(--color-dark-red);
+  --dataset-border: var(--color-steel-blue);
+  --dataset-link-hover: var(--color-dark-red);
+  --dataset-link-hover-text: var(--color-white);
+  --dataset-random-bg: var(--color-flat-navy);
+  --dataset-random-text: var(--color-white);
+  --icon: inherit;
+  --icon-hover: inherit;
+  --cta-btn-bg: var(--color-flat-navy);
+  --cta-btn-text: var(--color-white);
+  --cta-btn-hover-bg: var(--color-dark-red);
+  --cta-btn-hover-text: var(--color-white);
+  --tag-bg: var(--color-bright-cyan);
+  --tag-text: inherit;
+  --tag-focus-border: var(--color-bright-cyan);
+  --tag-focus-bg: var(--color-dark-red);
+  --tag-focus-text: var(--color-white);
+  --tag-hover-bg: var(--color-dark-red);
+  --tag-hover-text: var(--color-white);
+  --cta-bg: var(--color-pale-cerulean-light);
+  --cta-text: var(--color-flat-navy);
+  --pagination-arrow: var(--color-dark-red);
+  --selection-bg: var(--color-flat-chicklet);
+  --selection-text: var(--color-white);
+  --blockquote: var(--color-dark-red);
+  --tagline-text: var(--color-darker-red);
+  --skip-bg: var(--color-dark-red);
+  --skip-text: var(--color-alice-blue);
+  --skip-border: var(--color-bright-cyan);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --site-bg: var(--color-space-cadet);
+    --site-bg-sm: var(--color-space-cadet);
+    --site-title: var(--color-bright-cyan);
+    --bg-img: url("/img/area-chart-dark.svg");
+    --base-text: var(--color-alice-blue);
+    --link: var(--color-bright-cyan);
+    --link-hover-text: var(--color-burnt-sienna);
+    --text-decoration: var(--color-burnt-sienna);
+    --focus: var(--color-burnt-sienna);
+    --page-title: var(--color-bright-cyan);
+    --nav-active: var(--color-burnt-sienna);
+    --nav-hover-text: var(--color-burnt-sienna);
+    --nav-focus: var(--color-burnt-sienna);
+    --nav-link: var(--color-bright-cyan);
+    --nav-link-decoration: var(--color-flat-navy);
+    --focus: var(--color-burnt-sienna);
+    --menu: var(--color-bright-cyan);
+    --dataset-bg: var(--color-prussian-blue);
+    --dataset-title: var(--color-burnt-sienna);
+    --dataset-border: var(--color-steel-blue);
+    --dataset-link-hover: var(--color-burnt-sienna);
+    --dataset-link-hover-text: var(--color-space-cadet);
+    --dataset-random-bg: var(--color-bright-cyan);
+    --dataset-random-text: var(--color-flat-navy);
+    --icon: var(--color-bright-cyan);
+    --icon-hover: var(--color-burnt-sienna);
+    --tag-bg: var(--color-bright-cyan);
+    --tag-text: var(--color-raisin-black);
+    --tag-focus-border: var(--color-burnt-sienna);
+    --tag-focus-bg: var(--color-bright-cyan);
+    --tag-focus-text: var(--color-raisin-black);
+    --tag-hover-bg: var(--color-burnt-sienna);
+    --tag-hover-text: var(--color-raisin-black);
+    --cta-btn-bg: var(--color-bright-cyan);
+    --cta-btn-text: var(--color-raisin-black);
+    --cta-btn-hover-bg: var(--color-burnt-sienna);
+    --cta-btn-hover-text: var(--color-raisin-black);
+    --pagination-arrow: var(--color-burnt-sienna);
+    --selection-bg: var(--color-flat-chicklet);
+    --selection-text: var(--color-white);
+    --blockquote: var(--color-burnt-sienna);
+    --tagline-text: var(--color-burnt-sienna);
+    --skip-bg: var(--color-burnt-sienna);
+    --skip-text: var(--color-space-cadet);
+    --skip-border: var(--color-bright-cyan);
+  }
+}
+
+/* Resets ---------------------------------------------------------------- */
+/* Resets based on Andy Bell's Modern Reset
+https://piccalil.li/blog/a-modern-css-reset  */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles and padding on ul, ol elements with a class */
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Global ---------------------------------------------------------------- */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family-base);
+  background: var(--site-bg);
+  color: var(--base-text);
+  background-image: var(--bg-img);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat; background-size: cover;
+}
+
+@media (max-width: 950px) {
+ body {
+   background: var(--site-bg-sm);
+   background-image: unset;
+ }
+}
+
+main:focus {
+  outline: 0;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: .2rem;
+}
+
+a:hover {
+  color: var(--link-hover-text);
+  text-decoration: none;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: .2rem;
+}
+
+/* Layout --------------------------------------------------------------- */
+header,
+main,
+.site-nav {
+  padding: 1rem .5rem;
+}
+
+footer {
+  margin-top: auto;
+  padding: 2rem .5rem;
+}
+
+.footer-align {
+  margin-left: 12rem;
+}
+
+@media (max-width: 950px) {
+ .footer-align {
+   margin-left: unset;
+ }
+}
+
+/* Wrappers -------------------------------------------------------------- */
+.wrapper-page {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.wrapper-header {
+  max-width: 65rem;
+  margin: 0 auto .5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-content {
+  max-width: 45rem;
+}
+
+.wrapper-footer {
+  text-align: center;
+  font-size: .95rem;
+  content-visibility: auto;
+}
+
+/* Headings -------------------------------------------------------------- */
+h1,
+h2 {
+  font-family: var(--font-family-heading);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+  color: var(--page-title);
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* Header and Menu ---------------------------------------------------- */
+.site-title {
+  font-family: 'Righteous', sans-serif;
+  font-size: 2.1rem;
+  line-height: 1;
+  color: var(--site-title);
+  margin-top: .25rem;  /* optical cheat that's better than align-self */
+}
+
+
+.menu {
+  display: none;
+  color: var(--menu);
+  border: 0;
+  background: unset;
+  cursor: pointer;
+}
+
+.menu span {
+  display: block;
+  text-align: center;
+  font-size: .9rem;
+}
+
+.menu:focus {
+  outline: 2px solid var(--focus);
+  outline-offset: .2rem;
+}
+
+@media (max-width: 950px) {
+ .menu {
+  display:block
+ }
+}
+
+/* Navigation ------------------------------------------------------------ */
+.site-nav {
+  min-width: 10rem;
+  margin-right: 2rem;
+}
+
+@media (max-width: 950px) {
+ .site-nav {
+  font-size: 1.1rem;
+  display:none;
+  flex: 1;
+  margin-right: 0;
+ }
+}
+
+[aria-current="page"],
+[data-state="active"] {
+  border-left: 4px solid var(--nav-active);
+  padding: 0 .5rem;
+  text-decoration: none;
+  font-family: var(--font-family-base-bold);
+}
+
+.nav-link {
+  color: var(--nav-link);
+  text-decoration: none;
+  display: block;
+  font-size: 1.05rem;
+}
+
+.nav-link:hover {
+  color: var(--nav-hover-text);
+}
+
+.nav-link:focus  {
+  outline: 2px solid var(--nav-focus);
+  outline-offset: unset;
+}
+
+.nav-categories {
+  margin: 1.5rem 0 0;
+}
+
+.nav-categories div {
+  font-family: var(--font-family-base-bold);
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  color: var(--nav-link);
+  margin-bottom: .5rem;
+}
+
+/* Global Content -------------------------------------------------------- */
+.dataset-container {
+  background: var(--dataset-bg);
+  padding: clamp(1rem, 2vw, 1.25rem);
+  border: 1px solid var(--dataset-border);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.dataset-container a {
+  text-decoration-color: var(--text-decoration);
+}
+
+.dataset-container p a:hover {
+  background: var(--dataset-link-hover);
+  color: var(--dataset-link-hover-text);
+  text-decoration: none;
+}
+
+*::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+/* Utilities ------------------------------------------------------------- */
+.flow-0 > * + * {
+  margin-top: .5rem;
+}
+
+.flow-100 > * + * {
+  margin-top: 1rem;
+}
+
+.flow-150 > * + * {
+  margin-top: 1.5rem;
+}
+
+.flow-200 > * + * {
+  margin-top: 2rem;
+}
+
+.flow-300 > * + * {
+  margin-top: 3rem;
+}
+
+.flow-400 > * + * {
+  margin-top: 4rem;
+}
+
+.active {
+  display: block;
+}
+
+.no-js {
+  display: none;
+}
+
+/* Icons ----------------------------------------------------------------- */
+.icon-1-25x {
+  width: 1.25em;
+  height: 1.25em;
+  vertical-align: -.25em;
+}
+
+.icon-2x {
+  width: 2em;
+  height: 2em;
+  vertical-align: -.5em;
+}
+
+/* a11y ------------------------------------------------------------------ */
+a.skip-link {
+  left: -999px;
+  position: absolute;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: -999;
+}
+
+a.skip-link:focus,
+a.skip-link:active {
+  color: var(--skip-text);
+  background-color: var(--skip-bg);
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow: auto;
+  margin: 1rem 35%;
+  padding: 1rem;
+  border: 4px solid var(--skip-border);
+  outline-offset: unset;
+  text-align: center;
+  font-size: 1.2rem;
+  z-index: 999;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}

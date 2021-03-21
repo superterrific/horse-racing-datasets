@@ -1,0 +1,25 @@
+{% extends "layouts/datasets.html" %}
+{%- set pageTitle = title  + ' - ' + site.name -%}
+{% set datasetList = pagination.items %}
+{% set datakey = dataset %}
+
+{% if '/recently-added/' in page.url %}
+{% set datasetList = all | sortByNewest | limit(5) %}
+{% endif %}
+
+      {% block content %}
+      <div class="wrapper-content flow-100">
+        <h1>{{ title }}</h1>
+        <div class="flow-400">
+          {%- for datakey in datasetList -%}
+          {% include "partials/dataset.html" %}
+          {%- endfor -%}
+
+          {% if datasetList | isEmpty %}
+          <p>We haven't added any datasets recently, sorry!</p>
+          {% endif %}
+
+          {% include "partials/pagination.html" %}
+        </div>
+      </div>
+      {% endblock %}

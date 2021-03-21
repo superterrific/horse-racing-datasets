@@ -1,0 +1,7 @@
+.wrapper-404 {
+  text-align: center;
+}
+
+.wrapper-404 h1 {
+  font-size: clamp(2.5rem, 2.5vw, 3rem);
+}

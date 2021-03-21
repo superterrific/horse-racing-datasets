@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "text": "Breeders' Cup",
+      "url": "/breeders-cup/",
+      "id": "nav-breeders-cup"
+    },
+    {
+      "text": "Breeding",
+      "url": "/breeding/",
+      "id": "nav-breeding"
+    },
+    {
+      "text": "Del Mar",
+      "url": "/del-mar/",
+      "id": "nav-del-mar"
+    },
+    {
+      "text": "Fillies and Mares",
+      "url": "/fillies-and-mares/",
+      "id": "nav-fillies-and-mares"
+    },
+    {
+      "text": "Handle",
+      "url": "/handle/",
+      "id": "nav-handle"
+    },
+    {
+      "text": "Injuries",
+      "url": "/injuries/",
+      "id": "nav-injuries"
+    },
+    {
+      "text": "International",
+      "url": "/international/",
+      "id": "nav-international"
+    },
+    {
+      "text": "Juveniles",
+      "url": "/juveniles/",
+      "id": "nav-juveniles"
+    },
+    {
+      "text": "Kentucky Derby",
+      "url": "/kentucky-derby/",
+      "id": "nav-kentucky-derby"
+    },
+    {
+      "text": "Payouts",
+      "url": "/payouts/",
+      "id": "nav-payouts"
+    },
+    {
+      "text": "Racing",
+      "url": "/racing/",
+      "id": "nav-racing"
+    },
+    {
+      "text": "Saratoga",
+      "url": "/saratoga/",
+      "id": "nav-saratoga"
+    },
+    {
+      "text": "Tournaments",
+      "url": "/tournaments/",
+      "id": "nav-tournaments"
+    },
+    {
+      "text": "Triple Crown",
+      "url": "/triple-crown/",
+      "id": "nav-triple-crown/"
+    },
+    {
+      "text": "Wagering",
+      "url": "/wagering/",
+      "id": "nav-wagering"
+    }
+  ]
+}

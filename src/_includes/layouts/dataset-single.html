@@ -1,0 +1,13 @@
+{% extends "layouts/datasets.html" %}
+
+{% set datakey = single %}
+{% set headingLevel = 'h1' %}
+{% set headingLevelAdditional = 'h2' %}
+{% set siteDescription = single.description %}
+{% set pageTitle = single.title + ' - ' + site.name %}
+
+  {% block content %}
+  <div class="wrapper-content">
+    {% include "partials/dataset.html" %}
+  </div>
+  {% endblock %}

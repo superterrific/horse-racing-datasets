@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% include 'partials/meta-info.html' %}
+  <link rel="preload" href="/fonts/Merriweather-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Merriweather-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Righteous-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/SourceSansPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/SourceSansPro-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <style>{{ css | cssmin | safe }}</style>
+</head>
+<body>
+  {% if page.url !== '/' %}
+     {% include "partials/header.html" %}
+     <div class="wrapper-page">
+       {% include "partials/nav.html" %}
+  {% endif %}
+      <main id="main-content" tabindex="-1" class="flow-100">
+        {% block content %}{% endblock %}
+      </main>
+    {% if page.url !== '/' %}
+    </div>
+  {% endif %}
+
+  {% include 'partials/footer.html' %}
+
+{% if page.url !== '/' %}
+<script src="/js/toggle.js"></script>
+{% endif %}
+</body>
+</html>

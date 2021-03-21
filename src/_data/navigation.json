@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "text": "All Datasets",
+      "url": "/all/",
+      "id": "nav-all"
+    },
+    {
+      "text": "Recently Added",
+      "url": "/recently-added/",
+      "id": "nav-recently-added"
+    },
+    {
+      "text": "Submit a Dataset",
+      "url": "https://airtable.com/shrsC21awYkuXap3m",
+      "id": "nav-submit"
+    },
+    {
+      "text": "Home",
+      "url": "/",
+      "id": "nav-home"
+    },
+    {
+      "text": "About",
+      "url": "/about/",
+      "id": "nav-about"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<nav id="site-nav" class="site-nav active" aria-label="Primary">
+  <script>document.getElementById('site-nav').classList.remove('active');</script>
+  <ul class="flow-0">
+   {% for item in navigation.items %}
+   <li id="{{ item.id }}" class="nav-link"><a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }} class="nav-link">{{ item.text }}</a></li>
+   {% endfor %}
+   </ul>
+  <div class="nav-categories">
+    <div>Categories</div>
+    <ul class="flow-0">
+      {% for item in categories.items %}
+      <li id="{{ item.id }}" class="nav-link"><a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }} class="nav-link">{{ item.text }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
