@@ -1,12 +1,3 @@
 [build]
   command = "npm run production"
   publish = "public"
-
-[[redirects]]
-  from = "/new"
-  to = "/recently-added"
-  status = 301
-
-  from = "/injury"
-  to = "/injuries"
-  status = 301
