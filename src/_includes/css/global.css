@@ -38,6 +38,8 @@
   --font-family-base-bold: 'Source Sans Pro SemiBold', verdana, sans-serif;
   --font-family-subheading: 'Merriweather Regular', Georgia, sans-serif;
   --font-family-heading: 'Merriweather Bold', Georgia, sans-serif;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 2px 2px -2px rgba(0, 0, 0, 0.05);
   --color-space-cadet: #0c0c1c;
   --color-prussian-blue: #152941;
   --color-flat-chicklet: #593c8f;
@@ -87,7 +89,7 @@
   --cta-btn-hover-bg: var(--color-dark-red);
   --cta-btn-hover-text: var(--color-white);
   --tag-bg: var(--color-bright-cyan);
-  --tag-text: inherit;
+  --tag-text: var(--color-black);
   --tag-focus-border: var(--color-bright-cyan);
   --tag-focus-bg: var(--color-dark-red);
   --tag-focus-text: var(--color-white);
@@ -309,7 +311,6 @@ footer {
 .wrapper-footer {
   text-align: center;
   font-size: .95rem;
-  content-visibility: auto;
 }
 
 /* Headings -------------------------------------------------------------- */
@@ -320,6 +321,7 @@ h2 {
 }
 
 h1 {
+  font-size: 1.6rem;
   font-size: clamp(1.6rem, 2.5vw, 1.8rem);
   color: var(--page-title);
 }
@@ -417,9 +419,10 @@ h2 {
 /* Global Content -------------------------------------------------------- */
 .dataset-container {
   background: var(--dataset-bg);
+  padding: 1rem;
   padding: clamp(1rem, 2vw, 1.25rem);
   border: 1px solid var(--dataset-border);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-lg);
 }
 
 .dataset-container a {

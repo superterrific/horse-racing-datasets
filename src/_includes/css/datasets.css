@@ -37,9 +37,14 @@
 
 .data-format-links a {
   align-self: baseline;
-  margin-inline-end: 2rem;
+  margin-right: 2rem;
   text-decoration: none;
   color: currentColor;
+}
+
+[dir="rtl"] .data-format-links a {
+  margin-right: unset;
+  margin-left: 2rem;
 }
 
 .data-format-links a:hover {
@@ -72,8 +77,13 @@
 
 .tag-list > * {
   margin-bottom: .75rem;
-  margin-inline-end: .75rem;
+  margin-right: .75rem;
   margin-top: .5rem;
+}
+
+[dir="rtl"] .tag-list > * {
+  margin-right: unset;
+  margin-left: .75rem;
 }
 
 .tag-list a {
@@ -86,7 +96,7 @@
   text-decoration: none;
   padding: .5rem 1rem;
   border-radius: 1rem;
-  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 2px 2px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--shadow-sm);
 }
 
 .tag-list a:hover {
@@ -108,7 +118,6 @@
   font-size: 1.1rem;
 }
 
-[dir="rtl"] .pagination svg
-[dir="rtl"] .switch-icon {
+[dir="rtl"] .pagination svg {
   display: none;
 }
