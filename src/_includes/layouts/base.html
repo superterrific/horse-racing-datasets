@@ -28,7 +28,14 @@
   {% include 'partials/footer.html' %}
 
 {% if page.url !== '/' %}
-<script src="/js/toggle.js"></script>
+<script>
+  let navigation = document.getElementById('site-nav');
+  let toggler = document.getElementById('menu');
+
+  toggler.addEventListener('click', function() {
+    navigation.classList.toggle('active');
+  });
+</script>
 {% endif %}
 </body>
 </html>
