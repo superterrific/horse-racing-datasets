@@ -461,10 +461,6 @@ h2 {
   margin-top: 3rem;
 }
 
-.flow-400 > * + * {
-  margin-top: 4rem;
-}
-
 .active {
   display: block;
 }

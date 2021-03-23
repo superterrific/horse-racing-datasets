@@ -1,7 +1,8 @@
 ---
 title: 'Horse Racing Datasets'
 layout: 'layouts/homepage.html'
-summary: 'A collection of publicly shared datasets about Thoroughbred horse racing'
+summary: 'A collection of publicly shared datasets about Thoroughbred horse racing.'
+tagline: 'A collection of publicly shared datasets about Thoroughbred horse racing'
 ---
 
 [View all datasets](/all/)
