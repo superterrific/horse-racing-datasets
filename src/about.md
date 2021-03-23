@@ -10,22 +10,24 @@ Horse Racing Datasets [launched in 2015](http://www.raceday360.com/2015/01/28/an
  —Raceday 360
  {% endquote %}
 
- We started with 10 datasets and are currently at 69 at the launch of this redesign. We gave the site an update [in 2019](http://www.raceday360.com/2019/07/09/updated-site-new-datasets/), and this version aims to build on the improvement of the previous version by improving the speed, usability and accessibility of the site.
+ We started with 10 datasets and are currently at 69 at the launch of this redesign. We gave the site a major update [in 2019](http://www.raceday360.com/2019/07/09/updated-site-new-datasets/) that added new categories and the ability view datasets by category. This version aims to build on those improvements by increasing speed, usability and accessibility of the site.
 
 ## A few enhancements
 
  * The site is now created with [Eleventy](https://11ty.dev), a static site generator, which means the site is now very fast. See [the colophon](/colophon/) for a full list of what was used to build this site.
- * There is now pagination on the [All Datasets](/all/) listing.
+ * There is now pagination on the [All Datasets](/all/) listing to make navigating the growing list easier.
  * Each dataset now has its own page to make sharing easier.
- * Links now have visible focus states
+ * Links now have visible focus states.
  * There is a light and dark mode that respects the visitor's system level preference. We have plans to add a toggle to allow for more flexibility.
- * Color contrast in both light and dark modes meets [WCAG AA standards](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
- * There are no screen reflow issues at 400% zoom.
- * All information on the site is fully available if JavaScript disabled or fails to load.
+ * Color contrast in both light and dark modes meets [WCAG AA standards](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
+ * There are no screen reflow issues at up to 400% zoom.
+ * The site is fully functional if JavaScript disabled or fails to load.
 
-We'll continue to add datasets as we find them, and you can always suggest a dataset for inclusion by using our [submission form](https://airtable.com/shrsC21awYkuXap3m).
+ We've tested the site using [VoiceOver](https://support.apple.com/guide/voiceover/welcome/mac) on Mac but have not tested other screen readers or assistive technology. If you encounter any accessibility issues please [contact us](http://raceday360.wufoo.com/forms/r7x2x3/) and we'll do our best to quickly address your issue.
 
 ## Submissions
+We'll continue to add datasets as we find them, and you can always suggest a dataset for inclusion by using our [submission form](https://airtable.com/shrsC21awYkuXap3m).
+
 Our only current criteria, aside from being a dataset about Thoroughbred horse racing, is that the dataset should be in one of the following formats:
 
 * Google Sheet
