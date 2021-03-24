@@ -81,6 +81,7 @@ module.exports = config => {
   config.addPassthroughCopy('./src/img/');
   config.addPassthroughCopy('./src/fonts/');
   config.addPassthroughCopy('./src/js/');
+  config.addPassthroughCopy('./src/_redirects')
 
   return {
     markdownTemplateEngine: 'njk',
