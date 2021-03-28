@@ -1,7 +1,7 @@
 .grid-home {
 	display: grid;
   grid-gap: .5rem;
-	margin: 2rem auto 0 auto; /* Seeing if this works with clamp values for progressive enhancement */
+	margin: 2rem auto 0 auto;
   margin-top: clamp(.1rem, 2.5vw, 3rem);
   margin-left: auto;
   margin-right: auto;
@@ -18,12 +18,14 @@
 
 .tagline {
   font-family: var(--font-family-heading);
+	font-size: 1.4rem;
   font-size: clamp(1.4rem, 2.5vw, 1.8rem);
   line-height: 1.35;
   color: var(--tagline-text);
-	margin: 1.4rem 0 1.5rem .1rem; /* Seeing if this works with clamp values for progressive enhancement */
+	margin: 1.4rem 0 1.5rem .1rem;
   margin-top: clamp(1.4rem, 2.5vw, 5.5rem);
   margin-bottom: clamp(1.5rem, 2.5vw, 3rem);
+	padding-right: .1rem;
   padding-right: clamp(.1rem, 2.5vw, 1rem);
 }
 
