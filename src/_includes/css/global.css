@@ -40,8 +40,6 @@
   --font-family-heading: 'Merriweather Bold', Georgia, sans-serif;
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-sm: 0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 2px 2px -2px rgba(0, 0, 0, 0.05);
-  --tag-bg: var(--color-bright-cyan);
-  --tag-text: var(--color-black);
   --color-space-cadet: #0c0c1c;
   --color-prussian-blue: #152941;
   --color-flat-chicklet: #593c8f;
@@ -51,7 +49,7 @@
   --color-pale-cerulean-light: #d3e4ee;
   --color-electric-blue: #e0fbfc;
   --color-bright-cyan: #2bcaba;
-  --color-deep-cyan: #192b34;
+  --color-dark-cyan: #1C847A;
   --color-burnt-sienna: #f97556;
   --color-raisin-black: #2e2e3a;
   --color-flat-navy: #1e2749;
@@ -90,7 +88,8 @@
   --cta-btn-text: var(--color-white);
   --cta-btn-hover-bg: var(--color-dark-red);
   --cta-btn-hover-text: var(--color-white);
-  --tag-focus-border: var(--color-bright-cyan);
+  --tag-bg: var(--color-dark-cyan);
+  --tag-text: var(--color-white);
   --tag-focus-bg: var(--color-dark-red);
   --tag-focus-text: var(--color-white);
   --tag-hover-bg: var(--color-dark-red);
@@ -135,6 +134,8 @@
     --dataset-random-text: var(--color-flat-navy);
     --icon: var(--color-bright-cyan);
     --icon-hover: var(--color-burnt-sienna);
+    --tag-bg: var(--color-bright-cyan);
+    --tag-text: var(--color-black);
     --tag-focus-border: var(--color-burnt-sienna);
     --tag-focus-bg: var(--color-bright-cyan);
     --tag-focus-text: var(--color-raisin-black);
