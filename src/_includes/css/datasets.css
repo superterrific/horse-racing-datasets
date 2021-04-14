@@ -89,9 +89,6 @@
 .tag-list a {
   background: var(--tag-bg);
   color: var(--tag-text);
-}
-
-.tag-list a {
   font-size: .9rem;
   text-decoration: none;
   padding: .5rem 1rem;

@@ -123,7 +123,6 @@
     --nav-focus: var(--color-burnt-sienna);
     --nav-link: var(--color-bright-cyan);
     --nav-link-decoration: var(--color-flat-navy);
-    --focus: var(--color-burnt-sienna);
     --menu: var(--color-bright-cyan);
     --dataset-bg: var(--color-prussian-blue);
     --dataset-title: var(--color-burnt-sienna);
@@ -368,6 +367,7 @@ h2 {
 .site-nav {
   min-width: 10rem;
   margin-right: 2rem;
+  margin-top: .25rem;
 }
 
 @media (max-width: 950px) {

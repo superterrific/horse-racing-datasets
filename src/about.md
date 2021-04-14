@@ -20,7 +20,7 @@ Horse Racing Datasets [launched in 2015](http://www.raceday360.com/2015/01/28/an
  * Links now have visible focus states.
  * There is a light and dark mode that respects the visitor's system level preference. We have plans to add a toggle to allow for more flexibility.
  * Color contrast in both light and dark modes meets [WCAG AA standards](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html).
- * There are no screen reflow issues at up to 400% zoom.
+ * There are no screen reflow issues up to 500% zoom.
  * The site is fully functional if JavaScript disabled or fails to load.
 
  We've tested the site using [VoiceOver](https://support.apple.com/guide/voiceover/welcome/mac) on Mac but have not tested other screen readers or assistive technology. If you encounter any accessibility issues please [contact us](http://raceday360.wufoo.com/forms/r7x2x3/) and we'll do our best to quickly address your issue.
