@@ -367,16 +367,7 @@ h2 {
 .site-nav {
   min-width: 10rem;
   margin-right: 2rem;
-  margin-top: .25rem;
-}
-
-@media (max-width: 950px) {
- .site-nav {
-  font-size: 1.1rem;
-  display:none;
-  flex: 1;
-  margin-right: 0;
- }
+  margin-top: .4rem;
 }
 
 [aria-current="page"],
@@ -401,6 +392,19 @@ h2 {
 .nav-link:focus  {
   outline: 2px solid var(--nav-focus);
   outline-offset: unset;
+}
+
+@media (max-width: 950px) {
+ .site-nav {
+  display: none;
+  flex: 1;
+  margin-right: 0;
+  padding-top: 0;
+ }
+
+ .nav-link {
+   font-size: 1.2rem;
+ }
 }
 
 .nav-categories {
