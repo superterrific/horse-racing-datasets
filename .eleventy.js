@@ -62,6 +62,12 @@ module.exports = config => {
     return Array.isArray(value) && value.length === 0;
   });
 
+  // Open the browser on launch
+  config.setBrowserSyncConfig({
+    open: true,
+    ghostMode: false
+  });
+
   // Use slugify to remove apostrophe from tag links
   config.addFilter("slug", (input) => {
     const options = {
