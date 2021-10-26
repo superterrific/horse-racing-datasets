@@ -13,6 +13,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "airtable": "^0.10.1",
+    "browser-sync": "^2.26.14",
     "clean-css": "^4.2.3",
     "dotenv": "^8.2.0",
     "html-minifier": "^4.0.0",
