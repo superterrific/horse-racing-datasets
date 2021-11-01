@@ -3,7 +3,9 @@ title: 'Colophon'
 layout: 'layouts/page.html'
 summary: 'Things used to build this site.'
 ---
-This site is built with [Airtable](https://airtable.com) and [Eleventy](https://11ty.dev), a static site generator, and hosted at [Netlify](https://netlify.com). The source code is located at [Github](https://github.com/superterrific/horse-racing-datasets).
+This site is designed, built, maintained and conceived by [Dana Byerly](https://danabyerly.com). 
+
+It's built with [Airtable](https://airtable.com) and [Eleventy](https://11ty.dev), a static site generator, and hosted at [Netlify](https://netlify.com). The source code is located at [Github](https://github.com/superterrific/horse-racing-datasets).
 
 Additional tools include...
 

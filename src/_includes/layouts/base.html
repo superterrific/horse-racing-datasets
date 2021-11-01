@@ -35,6 +35,12 @@
   toggler.addEventListener('click', function() {
     navigation.classList.toggle('active');
   });
+
+  window.onkeyup = function(event) {
+      if (event.keyCode == 27) {
+        navigation.classList.remove('active');
+      }
+    }
 </script>
 {% endif %}
 </body>
