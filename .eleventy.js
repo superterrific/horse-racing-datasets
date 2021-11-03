@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon");
 const slugify = require("slugify");
 const CleanCSS = require('clean-css');
+const markdownIt = require('markdown-it');
+const markdownAnchor = require('./src/utils/markdown-anchor');
 
 // Transforms
 const htmlMinTransform = require('./src/transforms/html-min-transform.js');
@@ -88,6 +90,16 @@ module.exports = config => {
   config.addPassthroughCopy('./src/fonts/');
   config.addPassthroughCopy('./src/js/');
   config.addPassthroughCopy('./src/_redirects');
+
+  // Markdown and anchor options
+  const markdownOptions = {
+    html: true,
+    breaks: false,
+    linkify: true,
+    typographer: true,
+  };
+
+  config.setLibrary('md', markdownIt(markdownOptions).use(markdownAnchor));
 
   return {
     markdownTemplateEngine: 'njk',

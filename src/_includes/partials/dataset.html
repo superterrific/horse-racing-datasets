@@ -1,11 +1,16 @@
 <article class="dataset-container">
-  <{{ headingLevel if headingLevel else 'h2' }} class="dataset-title">
-    {{ datakey.title | safe }}
-    <a href="/{{ datakey.title | slug }}/" class="anchor">
-      <span class="visually-hidden">Permalink</span>
-      <span aria-hidden="true">#</span>
-    </a>
-  </{{ headingLevel if headingLevel else 'h2' }}>
+  <div class="heading-wrapper">
+    <{{ headingLevel if headingLevel else 'h2' }} class="dataset-title">
+      {{ datakey.title | safe }}
+    </{{ headingLevel if headingLevel else 'h2' }}>
+      <a href="/{{ datakey.title | slug }}/" class="anchor-link">
+        <span class="anchor-icon-dataset">
+          {% include 'partials/anchor-icon.html' %}
+        </span>
+        <span class="visually-hidden">(permalink)</span>
+      </a>
+  </div>
+
 
   {# ------ Links to datasets ------ #}
   <div class="data-format-list data-format-links">
