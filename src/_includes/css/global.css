@@ -239,7 +239,7 @@ body {
   background-repeat: no-repeat; background-size: cover;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
  body {
    background: var(--site-bg-sm);
    background-image: unset;
@@ -441,6 +441,23 @@ h2 {
 *::selection {
   background: var(--selection-bg);
   color: var(--selection-text);
+}
+
+/* Anchors ---------------------------------------------------------------  */
+.anchor-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.heading-wrapper :is(h1, h2, h3, h4, h5, h6) {
+  display: inline;
+}
+
+.anchor-icon {
+  vertical-align: -.18em;
+}
+.anchor-icon-dataset {
+  vertical-align: -.125em;
 }
 
 /* Utilities ------------------------------------------------------------- */
