@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% include 'partials/meta-info.html' %}
   <link rel="preload" href="/fonts/Merriweather-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  {% if page.url !== '/' %}
   <link rel="preload" href="/fonts/Merriweather-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/SourceSansPro-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  {% endif %}
   <link rel="preload" href="/fonts/Righteous-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/SourceSansPro-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/SourceSansPro-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <style>{{ css | cssmin | safe }}</style>
 </head>
 <body>
