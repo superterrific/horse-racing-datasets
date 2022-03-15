@@ -20,13 +20,6 @@
 }
 
 @font-face {
-    font-family: 'Merriweather Bold';
-    src: url('/fonts/Merriweather-Bold.woff2') format('woff2');
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Merriweather Regular';
     src: url('/fonts/Merriweather-Regular.woff2') format('woff2');
     font-style: normal;
@@ -37,7 +30,6 @@
   --font-family-base: 'Source Sans Pro', verdana, sans-serif;
   --font-family-base-bold: 'Source Sans Pro SemiBold', verdana, sans-serif;
   --font-family-subheading: 'Merriweather Regular', Georgia, sans-serif;
-  --font-family-heading: 'Merriweather Bold', Georgia, sans-serif;
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-sm: 0 5px 10px -3px rgba(0, 0, 0, 0.2), 0 2px 2px -2px rgba(0, 0, 0, 0.05);
   --color-space-cadet: #0c0c1c;
@@ -314,7 +306,7 @@ footer {
 /* Headings -------------------------------------------------------------- */
 h1,
 h2 {
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-subheading);
   line-height: 1.3;
 }
 
