@@ -6,7 +6,7 @@
    {% endfor %}
    </ul>
   <div class="nav-categories">
-    <div>Categories</div>
+    <h2>Categories</h2>
     <ul class="flow-0">
       {% for item in categories.items %}
       <li id="{{ item.id }}" class="nav-link"><a href="{{ item.url }}"{{ helpers.getLinkActiveState(item.url, page.url) | safe }} class="nav-link">{{ item.text }}</a></li>

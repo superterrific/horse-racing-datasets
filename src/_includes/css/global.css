@@ -403,7 +403,7 @@ h2 {
   margin: 1.5rem 0 0;
 }
 
-.nav-categories div {
+.nav-categories h2 {
   font-family: var(--font-family-base-bold);
   font-size: 1.15rem;
   text-transform: uppercase;
