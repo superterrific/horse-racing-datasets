@@ -35,6 +35,12 @@
 
   toggler.addEventListener('click', function() {
     navigation.classList.toggle('active');
+    toggler.setAttribute(
+      'aria-expanded',
+      toggler.getAttribute('aria-expanded') === 'true'
+        ? 'false'
+        : 'true'
+    );
   });
 
   window.onkeyup = function(event) {
