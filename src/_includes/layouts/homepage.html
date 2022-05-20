@@ -2,6 +2,8 @@
 
 {%- set pageTitle = title -%}
 {% set datakey = dataset %}
+{% set headingLevel = 'h3' %}
+{% set headingLevelAdditional = 'h4' %}
 
 {% set css %}
   {% include "css/global.css" %}
@@ -19,9 +21,18 @@
           <p class="cta-secondary"><a href="/recently-added/">View Recently Added Datasets</a></p>
         </div>
       </div>
-      <div>
-        <div class="dataset-random">Random Dataset of the Day</div>
+      
         {% include 'partials/random.html' %}
-      </div>
+
+    </div>
+    <div class="wrapper-browse flow-100 ">
+    <h2>Browse by Category</h2>
+      <nav aria-label="All categories">
+        <ul class="tag-cloud tag-list">
+          {% for item in categories.items %}
+          <li><a href="{{ item.url | slug }}">{{ item.text | safe }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
     {% endblock %}

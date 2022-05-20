@@ -72,8 +72,6 @@
   --dataset-border: var(--color-steel-blue);
   --dataset-link-hover: var(--color-dark-red);
   --dataset-link-hover-text: var(--color-white);
-  --dataset-random-bg: var(--color-flat-navy);
-  --dataset-random-text: var(--color-white);
   --icon: inherit;
   --icon-hover: inherit;
   --cta-btn-bg: var(--color-flat-navy);
@@ -82,6 +80,7 @@
   --cta-btn-hover-text: var(--color-white);
   --tag-bg: var(--color-dark-cyan);
   --tag-text: var(--color-white);
+  --tag-focus-border: var(--color-dark-red);
   --tag-focus-bg: var(--color-dark-red);
   --tag-focus-text: var(--color-white);
   --tag-hover-bg: var(--color-dark-red);
@@ -121,14 +120,12 @@
     --dataset-border: var(--color-steel-blue);
     --dataset-link-hover: var(--color-burnt-sienna);
     --dataset-link-hover-text: var(--color-space-cadet);
-    --dataset-random-bg: var(--color-bright-cyan);
-    --dataset-random-text: var(--color-flat-navy);
     --icon: var(--color-bright-cyan);
     --icon-hover: var(--color-burnt-sienna);
     --tag-bg: var(--color-bright-cyan);
     --tag-text: var(--color-black);
     --tag-focus-border: var(--color-burnt-sienna);
-    --tag-focus-bg: var(--color-bright-cyan);
+    --tag-focus-bg: var(--color-burnt-sienna);
     --tag-focus-text: var(--color-raisin-black);
     --tag-hover-bg: var(--color-burnt-sienna);
     --tag-hover-text: var(--color-raisin-black);
@@ -305,9 +302,10 @@ footer {
 
 /* Headings -------------------------------------------------------------- */
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--font-family-subheading);
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 h1 {

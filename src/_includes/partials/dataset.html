@@ -1,4 +1,7 @@
 <article class="dataset-container">
+  {% if page.url === "/" %}
+  <h2 class="dataset-random">Random Dataset of the Day</h2>
+  {% endif %}
   <div class="heading-wrapper">
     <{{ headingLevel if headingLevel else 'h2' }} class="dataset-title">
       {{ datakey.title | safe }}

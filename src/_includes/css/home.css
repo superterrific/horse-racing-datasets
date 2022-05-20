@@ -49,8 +49,18 @@
 }
 
 .dataset-random {
-  padding: .5rem;
-  background: var(--dataset-random-bg);
-  color: var(--dataset-random-text);
-  font-size: 1.2rem;
+	font-size: .9rem;
+  line-height: 1.2;
+	margin-block-end: 1rem;
+}
+
+.wrapper-browse {
+	width: min(100vw - 2rem, 90ch);
+	margin-top: 5rem;
+	margin: clamp(4rem, 5vw, 10rem) auto 0;
+	text-align: center;
+}
+
+.tag-cloud {
+	justify-content: center;
 }
