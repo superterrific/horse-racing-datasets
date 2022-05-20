@@ -93,7 +93,7 @@
 }
 
 .tag-list a:focus {
-  outline: none;
+  outline: 0;
   box-shadow: 0 0 0 4px var(--tag-focus-border);
   background: var(--tag-focus-bg);
   color: var(--tag-focus-text);
