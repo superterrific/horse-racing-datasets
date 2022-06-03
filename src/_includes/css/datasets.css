@@ -51,6 +51,7 @@
 .dataset-meta,
 .dataset-additional-info p {
   font-size: 1rem;
+  margin-block-start: .45rem;
 }
 
 .heading-additional-info  {
