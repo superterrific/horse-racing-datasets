@@ -452,7 +452,8 @@ h2 {
   vertical-align: -.18em;
 }
 .anchor-icon-dataset {
-  vertical-align: -.125em;
+  vertical-align: baseline;
+  padding-inline-start: .25rem;
 }
 
 /* Utilities ------------------------------------------------------------- */
