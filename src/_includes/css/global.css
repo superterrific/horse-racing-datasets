@@ -443,7 +443,7 @@ h2 {
   max-width: 38rem;
 }
 
-.heading-wrapper :is(h2, h3) {
+.heading-wrapper :is(h1, h2, h3, h4) {
   display: inline;
   line-height: 1.3;
 }
