@@ -439,8 +439,13 @@ h2 {
   font-weight: 500;
 }
 
-.heading-wrapper :is(h1, h2, h3, h4, h5, h6) {
+.heading-wrapper {
+  max-width: 38rem;
+}
+
+.heading-wrapper :is(h2, h3) {
   display: inline;
+  line-height: 1.3;
 }
 
 .anchor-icon {

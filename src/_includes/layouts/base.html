@@ -14,15 +14,15 @@
 </head>
 <body>
   {% if page.url !== '/' %}
-     {% include "partials/header.html" %}
-     <div class="wrapper-page">
-       {% include "partials/nav.html" %}
+   {% include "partials/header.html" %}
+   <div class="wrapper-page">
+     {% include "partials/nav.html" %}
   {% endif %}
-      <main id="main-content" tabindex="-1" class="flow-100">
-        {% block content %}{% endblock %}
-      </main>
-    {% if page.url !== '/' %}
-    </div>
+    <main id="main-content" tabindex="-1" class="flow-100">
+      {% block content %}{% endblock %}
+    </main>
+  {% if page.url !== '/' %}
+  </div>
   {% endif %}
 
   {% include 'partials/footer.html' %}
