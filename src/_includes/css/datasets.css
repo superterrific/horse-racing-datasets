@@ -31,7 +31,6 @@
   margin-right: 2rem;
   text-decoration: none;
   color: currentColor;
-  /* outline: 1px solid transparent; */
 }
 
 [dir="rtl"] .data-format-links a {
