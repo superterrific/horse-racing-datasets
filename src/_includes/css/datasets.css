@@ -31,6 +31,7 @@
   margin-right: 2rem;
   text-decoration: none;
   color: currentColor;
+  /* outline: 1px solid transparent; */
 }
 
 [dir="rtl"] .data-format-links a {
@@ -41,6 +42,7 @@
 .data-format-links a:hover {
   background: unset;
   color: var(--dataset-link-hover);
+  outline: 2px solid transparent;
 }
 
 .dataset-description {
@@ -86,11 +88,13 @@
   padding: .5rem 1rem;
   border-radius: 1rem;
   box-shadow: var(--shadow-sm);
+  outline: 1px solid transparent;
 }
 
 .tag-list a:hover {
   background: var(--tag-hover-bg);
   color: var(--tag-hover-text);
+  outline: 2px solid transparent;
 }
 
 .tag-list a:focus {
@@ -98,6 +102,7 @@
   box-shadow: 0 0 0 4px var(--tag-focus-border);
   background: var(--tag-focus-bg);
   color: var(--tag-focus-text);
+  outline: 2px solid transparent;
 }
 
 .pagination {
