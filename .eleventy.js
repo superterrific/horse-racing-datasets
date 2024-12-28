@@ -84,6 +84,7 @@ module.exports = config => {
   config.addPassthroughCopy('./src/fonts/');
   config.addPassthroughCopy('./src/js/');
   config.addPassthroughCopy('./src/_redirects');
+  config.addPassthroughCopy('./src/robots.txt');
 
   // Markdown and anchor options
   const markdownOptions = {
